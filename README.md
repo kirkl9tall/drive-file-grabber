@@ -33,7 +33,7 @@ A Python script that lists all files in a Google Drive folder, extracts their fi
 1. Install Python 3.12 (or compatible version).  
 2. Create a virtual environment:
 
-```bash
+
 python3 -m venv venv
 Activate the virtual environment:
 
@@ -42,17 +42,17 @@ venv\Scripts\activate      # Windows
 
 
 Install required packages:
-
+```bash
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-
+```
 3. Run the Script
 
 Make sure credentials.json is in the project folder.
 
 Run the script:
-
+```bash
 python3 list_drive_files.py
-
+```
 
 Paste your shared Google Drive folder link when prompted.
 
@@ -61,12 +61,13 @@ Authorize access in your browser when prompted.
 After successful authentication, a file drive_file_list.txt will be generated with all file names, IDs, and direct links.
 
 4. Output Example
+```bash
 76.webp | 189w1O4TAFveDGJtktNTa4dFPaA0RHKOG | https://drive.google.com/uc?id=189w1O4TAFveDGJtktNTa4dFPaA0RHKOG
 86.webp | 1eoMbsIg-mkfTmJRcL7V10pnZySAbTtVB | https://drive.google.com/uc?id=1eoMbsIg-mkfTmJRcL7V10pnZySAbTtVB
 52.webp | 1uUflPEWjs4e62BbRU4jTnUdxClSdiaUA | https://drive.google.com/uc?id=1uUflPEWjs4e62BbRU4jTnUdxClSdiaUA
 ...
-
-5. Notes
+```
+6. Notes
 
 If your folder has subfolders, you may need to adjust the script to recursively list files.
 
@@ -89,9 +90,9 @@ for f in files:
 This allows integration into other Python projects or automation scripts.
 
 7. License
-
+```bash
 MIT License – feel free to use, modify, and share.
-
+```
 
 I can also **make a shorter version with badges, installation, and usage sections** so it looks professional on GitHub. Do you want me to do that too?
 
